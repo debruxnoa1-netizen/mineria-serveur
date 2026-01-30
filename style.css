@@ -10,7 +10,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                url('https://images.wallpapersden.com/image/download/minecraft-night-minimalist-art_bW1lZ2uUmZqaraWkpJRmbmdlrWZlbWU.jpg');
+                url('https://www.bing.com/th/id/OIP.K0aU8QM8e75XQ_YL2eR95gHaEK?w=259&h=211&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -84,4 +84,5 @@ p {
 
 .btn:hover {
     filter: brightness(1.1);
+
 }
