@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Croix Blanche de l'Avesnois – Recrutement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset & Fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+    body { background-color: #FFFFFF; color: #333333; line-height: 1.6; }
+
+    /* Global Styles */
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; }
+
+    /* Header */
+    header {
+      background-color: #FFFFFF;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #EDEDED;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    header .logo-container img {
+      height: 60px;
+      width: auto;
+    }
+    header .logo { 
+      color: #E10600; 
+      font-weight: 700; 
+      font-size: 24px;
+    }
+    nav a {
+      margin-left: 20px;
+      color: #333333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #E10600; }
+
+    /* Hero Section */
+    .hero {
+      background-color: #F5F5F5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h1 { font-size: 48px; color: #E10600; margin-bottom: 20px; }
+    .hero p { font-size: 20px; margin-bottom: 30px; }
+    .hero button {
+      background-color: #E10600;
+      color: #FFFFFF;
+      border: none;
+      padding: 15px 40px;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .hero button:hover { background-color: #b00400; }
+
+    /* Section styles */
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+    section:nth-child(even) { background-color: #F5F5F5; }
+
+    h2 { font-size: 32px; color: #E10600; margin-bottom: 20px; text-align: center; }
+
+    .cards { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+    .card {
+      background-color: #FFFFFF;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: center;
+    }
+    .card h3 { margin-bottom: 15px; color: #E10600; }
+    .card p { font-size: 16px; }
+
+    /* Form */
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #FFFFFF;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .form-container input, .form-container textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #EDEDED;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    .form-container button {
+      background-color: #E10600;
+      color: #FFFFFF;
+      border: none;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 6px;
+      width: 100%;
+    }
+    .form-container button:hover { background-color: #b00400; }
+
+    /* Footer */
+    footer {
+      background-color: #333333;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      .cards { flex-direction: column; align-items: center; }
+      .hero h1 { font-size: 36px; }
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      nav a {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="logo_croix_blanche_avesnois.png" alt="Logo Croix Blanche Avesnois">
+      <div class="logo">Croix Blanche Avesnois</div>
+    </div>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#why">Pourquoi nous rejoindre</a>
+      <a href="#activities">Nos activités</a>
+      <a href="#join">Rejoindre</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Rejoignez la Croix Blanche de l'Avesnois</h1>
+    <p>Faites la différence, vivez des expériences uniques, et aidez votre communauté !</p>
+    <button onclick="document.getElementById('join').scrollIntoView({behavior:'smooth'})">Devenir bénévole</button>
+  </section>
+
+  <!-- À propos -->
+  <section id="about">
+    <h2>Qui sommes-nous ?</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      La Croix Blanche de l'Avesnois est une association humanitaire engagée dans le secours, la prévention et l'accompagnement des personnes en détresse. Nous formons et mobilisons des bénévoles passionnés pour répondre aux besoins de notre communauté.
+    </p>
+  </section>
+
+  <!-- Pourquoi nous rejoindre -->
+  <section id="why">
+    <h2>Pourquoi nous rejoindre ?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Expérience enrichissante</h3>
+        <p>Acquérez des compétences utiles et vivez des moments uniques.</p>
+      </div>
+      <div class="card">
+        <h3>Esprit d'équipe</h3>
+        <p>Rejoignez une communauté dynamique et solidaire.</p>
+      </div>
+      <div class="card">
+        <h3>Impact réel</h3>
+        <p>Aidez directement des personnes et faites la différence au quotidien.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nos activités -->
+  <section id="activities">
+    <h2>Nos activités</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Secours d'urgence</h3>
+        <p>Interventions rapides et efficaces sur le terrain.</p>
+      </div>
+      <div class="card">
+        <h3>Événements communautaires</h3>
+        <p>Participation à des actions locales et événements de prévention.</p>
+      </div>
+      <div class="card">
+        <h3>Formation et sensibilisation</h3>
+        <p>Programmes de formation pour bénévoles et grand public.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulaire rejoindre -->
+  <section id="join">
+    <h2>Rejoignez notre équipe</h2>
+    <div class="form-container">
+      <input type="text" placeholder="Nom complet" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Téléphone" required>
+      <textarea rows="4" placeholder="Pourquoi souhaitez-vous nous rejoindre ?"></textarea>
+      <button type="submit">Envoyer ma candidature</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Email : contact@croixblanche-avesnois.fr | Téléphone : 03 27 XX XX XX</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Croix Blanche de l'Avesnois - Tous droits réservés
+  </footer>
+
+</body>
+</html>
